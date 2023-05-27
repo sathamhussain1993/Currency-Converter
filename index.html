@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Currency Converter</h2>
+
+        <div class="form-group">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" class="form-control" placeholder="Enter amount">
+        </div>
+
+        <div class="form-group">
+            <label for="from_currency">From Currency:</label>
+            <select id="from_currency" class="form-control"></select>
+        </div>
+
+        <div class="form-group">
+            <label for="to_currency">To Currency:</label>
+            <select id="to_currency" class="form-control"></select>
+        </div>
+
+        <div class="form-group">
+            <button type="button" class="btn btn-secondary" onclick="swapCurrencies()">Switch</button>
+        </div>
+
+        <div class="result mt-4">
+            <strong>Result:</strong> <span id="converted_amount"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
